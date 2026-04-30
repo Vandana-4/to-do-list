@@ -6,8 +6,7 @@ A simple and interactive To-Do List application built using HTML, CSS, and JavaS
 - ➕ Add new tasks  
 - ✔️ Mark tasks as completed  
 - 🗑️ Delete tasks  
-- 🎯 Simple and user-friendly interface  
-- 📱 Responsive design for better experience on all devices  
+- 🎯 Simple and user-friendly interface    
 
 ## 🛠️ Tech Stack
 HTML, CSS, JavaScript
