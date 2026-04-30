@@ -1,94 +1,126 @@
 body {
-            background-image: url("wallpaper.jpg");
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
+    background-image: url("wallpaper.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        h1 {
-            font-family: serif;
-            font-size: 40px;
-        }
+/* MAIN BOX */
+#a {
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    padding: 25px 20px 40px 20px;
+    box-sizing: border-box;
+}
 
-        #a {
-            background-color: white;
-            border-radius: 20px;
-            width: 50%;
-            margin: 100px auto 20px;
-            padding: 40px 30px 70px 30px;
-        }
+/* TITLE */
+h1 {
+    font-family: serif;
+    font-size: 40px;
+    text-align: center;
+}
 
-        img {
-            width: 40px;
-            height: 40px;
-            margin-left: 10px;
-        }
+/* IMAGE */
+img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
 
-        input {
-            width: 500px;
-            padding: 15px;
-            border-radius: 10px;
-        }
+/* INPUT */
+input {
+    width: 85%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
 
-        button {
-            background-color: purple;
-            color: white;
-            padding: 15px;
-            margin-left: 5px;
-            cursor: pointer;
-            border-radius: 10px;
-        }
+/* BUTTON */
+button {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
-        ul {
-            padding: 0;
-            margin: 0;
-        }
+/* LIST */
+ul {
+    padding: 0;
+    margin: 0;
+}
 
-        ul li {
-            list-style: none;
-            font-size: 20px;
-            padding: 10px 8px 12px 40px;
-            margin-top: 20px;
-            cursor: pointer;
-            position: relative;
-        }
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    word-wrap: break-word;
+}
 
-        ul li::before {
-            content: ' ';
-            position: absolute;
-            height: 28px;
-            width: 28px;
-            border-radius: 50%;
-            background-image: url("uncheck.png");
-            background-size: cover;
-            background-position: center center;
-            top: 12px;
-            left: 0;
-        }
+/* CHECK ICON */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("uncheck.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0;
+}
 
-        .checked {
-            color: grey;
-            text-decoration: line-through;
-        }
+/* CHECKED */
+.checked {
+    color: grey;
+    text-decoration: line-through;
+}
 
-        .checked::before {
-            background-image: url("check.png");
-        }
+.checked::before {
+    background-image: url("check.png");
+}
 
-        ul li span {
-            position: absolute;
-            right: 50px;
-            top: 8px;
-            width: 40px;
-            height: 40px;
-            font-size: 22px;
-            color: black;
-            line-height: 40px;
-            text-align: center;
-            border-radius: 50%;
-        }
+/* DELETE BUTTON */
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+}
 
-        ul li span:hover {
-            background-color: purple;
-            color: white;
-        }
+ul li span:hover {
+    background-color: purple;
+    color: white;
+}
+
+/*MOBILE FIX */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #a {
+        width: 95%;
+        padding: 20px;
+    }
+}
